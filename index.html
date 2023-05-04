@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Asem's Form</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>New User Signup:</legend>
+
+      <form
+        action="https://mumstudents.org/params.php"
+        method="post"
+        target="_blank"
+      >
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" maxlength="16" name="name" id="name" />
+        </div>
+        <div>
+          <label for="gender">Gender:</label>
+          <span>
+            <input type="radio" name="gender" id="male" value="male" />
+            <label for="male">Male</label>
+          </span>
+          <span>
+            <input
+              type="radio"
+              checked
+              name="gender"
+              id="female"
+              value="female"
+            />
+            <label for="female">Female</label>
+          </span>
+        </div>
+        <div>
+          <label for="age">Age:</label>
+          <input
+            type="number"
+            name="age"
+            id="age"
+            max="99"
+            pattern="\d{2}"
+            style="width: 60px"
+          />
+        </div>
+        <div>
+          <label for="personality">Personality Type:</label>
+          <span>
+            <input
+              type="text"
+              style="width: 60px"
+              name="personality"
+              id="personality"
+              maxlength="4"
+            />
+            <a target="_blank" href="https://www.humanmetrics.com/personality"
+              >(Don't know your type?)</a
+            >
+          </span>
+        </div>
+        <div>
+          <label for="favoriteOS">Favorate OS:</label>
+          <select name="favoriteOS" id="favoriteOS">
+            <option value="Windows">Windows</option>
+            <option value="Mac">Mac OS X</option>
+            <option value="Mac">Linux</option>
+          </select>
+        </div>
+        <div>
+          <label for="seekingAge">Seeking Age:</label>
+          <span>
+            <input
+              type="number"
+              placeholder="min"
+              name="min"
+              style="width: 60px"
+              id="min"
+            />
+            to
+            <input
+              type="number"
+              name="max"
+              placeholder="max"
+              style="width: 60px"
+              id="max"
+            />
+          </span>
+        </div>
+
+        <button>Sign Up</button>
+      </form>
+    </fieldset>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+fieldset {
+  width: 450px;
+  background-color: #dfe1ff;
+}
+
+fieldset legend {
+  background-color: #fff;
+  border: 1px solid black;
+}
+
+form > div {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 10px;
+}
+
+form > div > :first-child {
+  width: 150px;
+}
+a {
+  text-decoration: none;
+  color: red;
+}
+form button {
+  background-color: #faa9a7;
+  font-size: 15px;
+  font-weight: bold;
+  width: 100px;
+}
+
+form input:invalid {
+  border: 1px solid red;
+}
